@@ -1,6 +1,7 @@
 import os
 from PIL import Image
 
+# TODO : Fix the bug where the color of the entire 512x512 image is changed to the specified color.
 def change_color(image_path, output_folder, hex_color):
     """Changes the color of flat PNG icons to the specified hex color.
     
@@ -10,13 +11,13 @@ def change_color(image_path, output_folder, hex_color):
     
     :return: None (saves the image to the output folder).
     
-    >>> change_color("dog.png", "#FF0000")
-    SUCCESS: Changed dog.png color to #FF0000. Saved to outputs/dog.png
+    >>> change_color("nacho.png", "outputs", "#FF0000)
+    SUCCESS: Changed nacho.png color to #FF0000. Saved to folder: outputs
     """
     
     try:
         if not image_path.endswith(".png"):
-            print("IMAGE ERROR : Input image must be a PNG file.")
+            print("EXT ERROR: Input image must be a PNG file.")
             return
         
         # Convert hex color to RGB tuple

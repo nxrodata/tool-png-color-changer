@@ -2,7 +2,7 @@ import os
 from color_changer import change_color
 
 if __name__ == "__main__":
-    HEX_COLOR = "#"
+    HEX_COLOR = "#85A0C7"
     IMAGE_FOLDER = "pngs"
     OUTPUT_FOLDER = "outputs"
     
